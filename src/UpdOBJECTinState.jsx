@@ -11,10 +11,10 @@ function UpdOBJECTinState() {
 
     }
     function handleMakeChange(event){
-      
+      setCar(c => ({...c, make:event.target.value}));
     }
     function handleModelChange(event){
-      
+      setCar(c => ({...c, model:event.target.value}));
     }
 
  
