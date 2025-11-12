@@ -13,6 +13,7 @@ import Change from "./Change.jsx";
 import ColorPicker from "./ColorPicker.jsx";
 import UpdaterFunction from "./updaterFunction.jsx";
 import UpdOBJECTinState from "./UpdOBJECTinState.jsx";
+import UpdARRAYinState from "./UpdARRAYinState.jsx";
 //HOW TO STYLE REACT COMPONENTS WITH CSS
 // 1. EXTERNAL
 // 2. MODULES
@@ -61,6 +62,7 @@ function App() {
       <ColorPicker />
       <UpdaterFunction></UpdaterFunction>
       <UpdOBJECTinState/>
+      <UpdARRAYinState/>
     </>
   );
 }
