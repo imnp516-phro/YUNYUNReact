@@ -17,8 +17,8 @@ function UpdARRAYinOBJ(){
         setCarModel("");
     }
 
-    function handleRemoveCar(){
-
+    function handleRemoveCar(index){
+        setCars(c => c.filter((_, i) => i !== index))
     }
 
     function handleYearChange(event){
@@ -38,7 +38,7 @@ function UpdARRAYinOBJ(){
 
             <ul>
                 {cars.map((car, index) => 
-                <li key ={index}>
+                <li key ={index} onClick={() => handleRemoveCar(index)}>
                     {car.year} {car.make} {car.model}
                 </li>)}
                 
